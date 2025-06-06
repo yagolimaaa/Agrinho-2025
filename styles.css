@@ -1,0 +1,284 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Arial', sans-serif;
+    color: #2E7D32;
+}
+
+a {
+    text-decoration: none;
+    color: #2E7D32;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo {
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Navegação */
+nav {
+    background-color: #1B5E20;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.destaque {
+    background-color: #E8F5E9;
+    border-left: 5px solid #2E7D32;
+}
+
+.fundo-claro {
+    background-color: #F1F8E9;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    border-bottom: 2px solid #C8E6C9;
+    padding-bottom: 0.5rem;
+}
+
+/* Seções Específicas */
+.imagem-dupla {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.imagem-dupla img {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.icone {
+    text-align: center;
+    width: 150px;
+    margin: 1rem;
+}
+
+.icone img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.lista-beneficios {
+    columns: 2;
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+.campo-grafico, .processamento-grafico, .cidade-grafico {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.campo-grafico {
+    background-color: #C8E6C9;
+}
+
+.processamento-grafico {
+    background-color: #A5D6A7;
+}
+
+.cidade-grafico {
+    background-color: #81C784;
+}
+
+.seta {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.evento {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.evento h4 {
+    margin-top: 0;
+    color: #1B5E20;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1B5E20;
+    color: white;
+    padding: 2rem 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    margin: 1rem;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    color: white;
+    border-bottom: 1px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0D3C12;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo-container {
+        position: static;
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.5rem 0;
+    }
+    
+    .imagem-dupla {
+        flex-direction: column;
+    }
+    
+    .imagem-dupla img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .lista-beneficios {
+        columns: 1;
+    }
+    
+    .grafico {
+        flex-direction: column;
+    }
+    
+    .seta {
+        margin: 1rem 0;
+        transform: rotate(90deg);
+    }
+}
